@@ -2,12 +2,11 @@
 
 ## Thing to do before take part in the CURD operation
 
-```
-Create jsonpowerdb and generate token for your DB
-Open index.js in this project
-Add TOKEN="user jsonpowerDB token",DB="database name",REL="tabel name"
-Thats all you are ready to play with this CURD-operation
-```
+- Create jsonpowerdb and generate token for your DB
+- Open index.js in this project
+- Add TOKEN="user jsonpowerDB token",DB="database name",REL="tabel name"
+- Thats all you are ready to play with this CURD-operation
+
 
 ## create new user
 
