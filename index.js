@@ -1,6 +1,6 @@
-const TOKEN = "90939035|-31949284158763881|90940535";
-const DB = "Demo";
-const REL = "Demo-rel";
+const TOKEN = "enter-your-token";
+const DB = "enter-your-db-name";
+const REL = "enter-your-table-name";
 
 //get user data from the jsondb
 function getdata(name) {
