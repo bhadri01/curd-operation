@@ -1,6 +1,6 @@
 const TOKEN = "90939035|-31949284158763881|90940535";
-const DB = "Student";
-const REL = "Student-Rel";
+const DB = "Demo";
+const REL = "Demo-rel";
 
 //get user data from the jsondb
 function getdata(name) {
@@ -8,10 +8,10 @@ function getdata(name) {
   $.post(
     "http://api.login2explore.com:5577/api/irl",
     JSON.stringify({
-      token: "90939035|-31949284158763881|90940535",
+      token: TOKEN,
       cmd: "GET_BY_KEY",
-      dbName: "Demo",
-      rel: "Demo-rel",
+      dbName: DB,
+      rel: REL,
       createTime: true,
       updateTime: true,
       jsonStr: {
@@ -56,10 +56,10 @@ function createdata() {
   $.post(
     "http://api.login2explore.com:5577/api/iml",
     JSON.stringify({
-      token: "90939035|-31949284158763881|90940535",
+      token: TOKEN,
       cmd: "PUT",
-      dbName: "Demo",
-      rel: "Demo-rel",
+      dbName: DB,
+      rel: REL,
       jsonStr: {
         id,
         name,
@@ -85,10 +85,10 @@ function updatedata(num) {
   const email = document.getElementById("email").value;
   const mobile = document.getElementById("mobile").value;
   let dat = createUPDATERecordRequest(
-    "90939035|-31949284158763881|90940535",
+    TOKEN,
     JSON.stringify({ id, name, email, mobile }),
-    "Demo",
-    "Demo-rel",
+    DB,
+    REL,
     num
   );
   jQuery.ajaxSetup({ async: false });
@@ -106,10 +106,10 @@ function removedata(n) {
   $.post(
     "http://api.login2explore.com:5577/api/iml",
     JSON.stringify({
-      token: "90939035|-31949284158763881|90940535",
+      token: TOKEN,
       cmd: "REMOVE",
-      dbName: "Demo",
-      rel: "Demo-rel",
+      dbName: DB,
+      rel: REL,
       jsonStr: {},
       record: n,
     }),
